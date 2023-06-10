@@ -16,8 +16,8 @@ dotenv.config();
 const app=express();
 connectDB();
 ///////////////
-const __filename=fileURLTopath('import.meta.url');
-const __dirname=path.dirname(__filename)
+const __filename=fileURLToPath(import.meta.url);
+const __dirname=path.dirname(__filename);
 ////////middleware
 app.use(express.json())
 app.use(morgan('dev'));
